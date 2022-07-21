@@ -1,11 +1,11 @@
 FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-devel
 RUN beautifulsoup4==4.10.0
 RUN certifi==2021.10.8
-RUN --rm -it charset-normalizer==2.0.12
+RUN charset-normalizer==2.0.12
 RUN click==8.0.4
 RUN cycler==0.11.0
 RUN dlib==19.23.1
-RUN --rm -it docker-pycreds==0.4.0
+RUN docker-pycreds==0.4.0
 RUN filelock==3.6.0
 RUN fonttools==4.31.2
 RUN gdown==4.4.0
