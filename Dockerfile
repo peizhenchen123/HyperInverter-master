@@ -1,7 +1,6 @@
 FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-devel
 RUN beautifulsoup4==4.10.0
 RUN certifi==2021.10.8
-RUN charset-normalizer==2.0.12
 RUN click==8.0.4
 RUN cycler==0.11.0
 RUN dlib==19.23.1
