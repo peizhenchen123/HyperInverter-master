@@ -1,7 +1,14 @@
 FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-devel
-RUN yum -y install cmake
-RUN yum install -y python36u-devel.x86_64
-RUN yum -y groupinstall "Development tools"
+RUN yum -y groupinstall "Development tools"  && \
+    yum -y install cmake && \
+    yum install -y boost boost-devel boost-doc  && \
+    yum install -y libXdmcp libXdmcp-devel  && \
+    yum clean all  &&  rm -rf /var/cache/yum
+
+RUN yum search python3 | grep devel  && \
+    yum install -y python36u-devel.x86_64  && \
+    yum clean all  # &&  rm -rf /var/cache/yum
+
 RUN pip install beautifulsoup4==4.10.0
 RUN pip install certifi==2021.10.8
 RUN pip install charset-normalizer==2.0.12
