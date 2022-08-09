@@ -18,7 +18,7 @@ RUN pip install kiwisolver==1.4.2
 RUN pip install matplotlib==3.5.1
 RUN pip install ninja==1.10.2.3
 RUN pip install numpy==1.21.5
-RUN pip install opencv-python==4.5.5.62
+RUN pip install opencv-python-headless
 RUN pip install packaging==21.3
 RUN pip install pathtools==0.1.2
 RUN pip install Pillow==9.0.1
