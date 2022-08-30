@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-devel
+FROM pytorch/pytorch:1.12.1-cuda11.3-cudnn8-devel
 RUN pip install beautifulsoup4==4.10.0
 RUN pip install certifi==2021.10.8
 RUN pip install charset-normalizer==2.0.12
